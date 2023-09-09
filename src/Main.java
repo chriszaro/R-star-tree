@@ -75,8 +75,11 @@ public class Main {
 
                 while (it.hasNext()) {
                     AlgorithmInsert.insert(it.next());
-                    System.out.println(++counter);
+//                    System.out.println(++counter);
+                    System.out.println("\t\t\tstarting OVER");
                     deapthFirstPrint(root,0);
+//                    String out = PrettyPrinter.printRStarTree(root);
+//                    System.out.println(out);
                 }
 
                 //System.out.println((IO.loadRecordFromFile("1_2")));

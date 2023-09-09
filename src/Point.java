@@ -64,17 +64,17 @@ public class Point implements java.io.Serializable {
         sb.append('(');
         for (String coordsString : this.coordsStrings) {
             sb.append(coordsString);
-            sb.append(',');
+            sb.append('_');
         }
-        int pos = sb.lastIndexOf(",");
+        int pos = sb.lastIndexOf("_");
         String temp = sb.substring(0, pos);
         sb = new StringBuilder();
         sb.append(temp);
         sb.append(')');
-        sb.append(' ');
-        sb.append(name);
-        sb.append(' ');
-        sb.append(id);
+//        sb.append(' ');
+//        sb.append(name);
+//        sb.append(' ');
+//        sb.append(id);
         return sb.toString();
     }
 
